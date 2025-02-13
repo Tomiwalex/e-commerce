@@ -8,11 +8,11 @@ const AuthPage = () => {
   const [authPage, setAuthPage] = useState("signin");
 
   return (
-    <div className=" px-5 flex h-[calc(100vh-68px)] bg-[#00000050] justify-center items-center">
+    <div className=" px-5 flex h-[100dvh] bg-[#00000070] justify-center items-center">
       <img
         src="https://img.freepik.com/free-photo/audio-video-jacks-isolated-white_93675-133405.jpg?w=996&t=st=1699964253~exp=1699964853~hmac=0c0ca8e79e106edae790a0e0057201acd6b8f1842e4c8771c892d8e87d80efad"
         alt=""
-        className="object-cover absolute top-[68px] h-[calc(100vh-68px)] w-[100vw] z-[-1]"
+        className="object-cover absolute h-[100dvh] w-[100vw] z-[-1]"
       />
       {authPage === "signup" && <Register setAuthPage={setAuthPage} />}
       {authPage === "signin" && <Login setAuthPage={setAuthPage} />}

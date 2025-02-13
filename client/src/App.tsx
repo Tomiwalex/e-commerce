@@ -12,7 +12,6 @@ function App() {
     <div className="min-h-[100vh]">
       <Router>
         <ShopContextProvider>
-          <Navbar />
           <Routes>
             <Route path="/" element={<ShopPage />} />
             <Route path="/auth" element={<AuthPage />} />
